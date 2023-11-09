@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+
 button[type="submit"] {
     background-color: #34cc8b;
     border: none;
@@ -43,15 +48,15 @@ button[type="reset"]:active{
     box-shadow: inset 4px 4px 4px #444;
 
 }
+
 button:disabled,
-button:disabled:hover{
+button:disabled:hover {
   background-color: #ccc;
   box-shadow: none;
   cursor:not-allowed;
   border: none;
   padding:10px  20px;
   border-radius: 8px;
-  
-
-  
+  color: #444;
+ 
 }

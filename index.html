@@ -12,6 +12,53 @@
     
         <form action="">
 
+
+            <div class="controle-form">
+                <label for="volume">Volume</label>
+                <input type="range" id="volume" min="0" max="100" step="10">
+            </div>
+
+            <fieldset>
+                <legend>Localidade</legend>
+
+                <select id="País">
+                    <option value="0">Brasil</option>
+                    <option value="1">Argentina</option>
+                    <option value="2">Afeganistão</option>
+                    <option value="3">Canadá</option>
+                        <legend>Localidade</legend>
+                    <datalist id="uf">
+                        <option value="AP">Amapá</option>
+                        <option value="CE">Ceará</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="TO">Tocantins</option>
+    
+                    </datalist>
+                </select>
+           
+                <div class="controle-form">
+                    <label for="selectUF">UF:</label>
+                    <input list="uf" value="SP"id="selectUF">
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Turno:</legend>
+                
+                <div class="controle-form">
+
+                    <input type="radio" name="turno" id="manha">
+                    <label for="manha">Manhã</label>
+
+                    <input type="radio" name="turno" id="tarde">
+                    <label for="tarde" id="tarde">Tarde</label>
+
+                    <input type="radio" name="turno" id="noite">
+                    <label for="noite" id="noite">Noite</label>          
+                </div>
+            </fieldset>
+
             <div class="controle-form">
                 <label for="codigo">Codigo:</label>
                 <input type="number" id="codigo" value="123456" disabled>
@@ -33,7 +80,7 @@
             </div><br><br>
     
             <div class="controle-form">
-                <label for="email">E-MAIL:</label>
+                <label for="email">E-mail:</label>
                 <input type="email" id="email" required autocomplete="email" placeholder="nome@nome.com">
             </div><br><br>
 
@@ -59,8 +106,14 @@
             </div><br><br>
 
             <div class="controle-form">
-                <label for="cadastro">Cadastro:</label>
-                <input type="date" id="cadastro" >
+                <label for="dataCadastro"> Data do Cadastro:</label>
+                <input type="date" id="dataCdastro" >
+            </div><br><br>
+
+
+            <div class="controle-form">
+                <label for="dataHoraCadastro"> Data e Hora Cadastro:</label>
+                <input type="dataHoraCadastro" id="dataHoraCadastro" >
             </div><br><br>
 
             <div class="controle-form">
@@ -68,8 +121,9 @@
                 <input type="time" id="idade" >
             </div><br><br>
 
+
             <div class="controle-form">
-                <label for="novaSenha">Senha:</label>
+                 <label for="novaSenha">Senha:</label>
                 <input type="password" id="novaSenha" >
             </div><br><br>
             <div class="controle">
@@ -92,6 +146,7 @@
             <button type="desabled">Desabilitado</button>
             
         </form>
+        
 </body>
     <p>Obrigada pelas respostas!</p>
 </html>
